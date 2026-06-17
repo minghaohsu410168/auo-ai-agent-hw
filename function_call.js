@@ -4,20 +4,22 @@ import {
   getNearbyYoubikeTool,
   getNearbyYoubike,
 } from "./tools/youbike.js";
+import { convertUnitTool, convertUnit } from "./tools/convert_unit.js";
 import { spinner } from "./utils/spinner.js";
 
 const AVAILABLE_TOOLS = {
   get_weather: getWeather,
   get_nearby_youbike: getNearbyYoubike,
+  convert_unit: convertUnit,
 };
 
-const tools = [getWeatherTool, getNearbyYoubikeTool];
+const tools = [getWeatherTool, getNearbyYoubikeTool, convertUnitTool];
 
 const messages = [
   {
     role: "user",
     content:
-      "我在台北車站附近，請問現在天氣如何？順便告訴我附近還有沒有 YouBike 可以租？",
+      "請幫我換算：25 度 C 是華氏幾度？10 公里等於幾英里？70 公斤是幾磅？",
   },
 ];
 
