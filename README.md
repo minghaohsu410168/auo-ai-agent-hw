@@ -1,5 +1,12 @@
-# AI Agent 實作工作坊（JavaScript 版）
+# 作業 2：新增⼀個 Function Calling ⼯具
+```
+任務描述：參考課程的天氣⼯具，新增⼀個「單位換算」⼯具，讓 AI 可以進⾏
+單位換算。
+```
+
+## 執行步驟
 `執行 node main.js`
+
 ## 執行結果
 ``` bash
 @minghaohsu410168 ➜ /workspaces/auo-ai-agent-hw (ai-agent-hw2) $ node main.js 
